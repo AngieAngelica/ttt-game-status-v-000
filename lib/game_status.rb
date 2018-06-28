@@ -41,6 +41,7 @@ WIN_COMBINATIONS = [
 end
 # checking if all of those variables are equal
 
+
 def full?(board)
   if board.detect {|i| i == " " || i == nil}
     false
@@ -70,6 +71,7 @@ def over?(board)
 end 
 
 
+<<<<<<< HEAD
 def winner(board)
   if winning_combo = won?(board) #even though we will use one token, we need to trust that it will return an array
   board[winning_combo[0]] #winning_combo.first the equiv to winning_combo[0]
@@ -113,5 +115,8 @@ end
     returns nil when no winner
 =end 
   
+=======
+def winner?(board)
+>>>>>>> a9c982a96d9c6b09d52f28f99fbb7d68a552542c
     
   
